@@ -750,6 +750,7 @@ find_parameters (char **start_dir, ssize_t * start_dir_len,
             options.find_recurs = recursively_cbox->state & C_BOOL;
             options.file_pattern = file_pattern_cbox->state & C_BOOL;
             options.file_case_sens = file_case_sens_cbox->state & C_BOOL;
+            options.only_directories = only_directories_cbox->state & C_BOOL;
             options.skip_hidden = skip_hidden_cbox->state & C_BOOL;
             options.ignore_dirs_enable = ignore_dirs_cbox->state & C_BOOL;
             g_free (options.ignore_dirs);
